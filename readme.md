@@ -8,18 +8,18 @@
 9. В пайчарме создать новый проект, установить через pip install Django, nano, psycopg2
 10. django-admin startproject config . 
 11. Настройки settings.py
-ALLOWED_HOSTS = ["127.0.0.1"]
+    ALLOWED_HOSTS = ["127.0.0.1"]
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mydb',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'db_django', 
-        'PORT': '5432',
-    }
-} 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'mydb',
+            'USER': 'postgres',
+            'PASSWORD': 'postgres',
+            'HOST': 'db_django', 
+            'PORT': '5432',
+                }
+            } 
 12. python manage.py makemigrations
 13. Перезапуск докеров 
 14. Запуск через ./manage.py runserver 0.0.0.0:8000
